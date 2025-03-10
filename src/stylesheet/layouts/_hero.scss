@@ -1,0 +1,39 @@
+@use '../abstracts/functions';
+@use '../abstracts/mixins';
+
+.hero {
+  &__text {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    text-align: center;
+    padding: 10px 10px 20px;
+  }
+  &__title {
+    font-size: functions.fontSize('x-large');
+  }
+  &__cta {
+    margin: auto;
+  }
+  &__img {
+    height: auto;
+    width: 100%;
+  }
+
+  @include mixins.media-breakpoint(min, tablet) {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    &__text {
+      align-self: center;
+      text-align: left;
+      padding: 10px 10px 0 25px;
+    }
+    &__cta {
+      margin: 0;
+    }
+    &__img {
+      border-radius: 0 0 0 20%;
+    }
+  }
+}
