@@ -4,7 +4,7 @@ import { variables } from '../utils/variables';
 const Header = () => {
   return (
     <header className='header'>
-      <h1 className='header__title'>{variables.siteName}</h1>
+      <h2 className='header__title'>{variables.siteName}</h2>
       <Menu />
     </header>
   );

@@ -15,4 +15,7 @@
   @include mixins.media-breakpoint(min, tablet) {
     padding: 20px;
   }
+  &__title {
+    color: functions.color(secondary);
+  }
 }

@@ -19,7 +19,7 @@
   &__select,
   &__textarea {
     border: 1px solid functions.color(secondary);
-    background-color: functions.color(light);
+    // background-color: functions.color(light);
     &--error {
       border: 2px solid functions.color(error);
     }

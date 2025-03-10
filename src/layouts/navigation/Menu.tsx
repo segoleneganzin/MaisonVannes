@@ -1,11 +1,8 @@
 import { useState, useEffect, useRef } from 'react';
-import { useNavigate } from 'react-router-dom';
 import Cta from '../../components/Cta';
 import { homeSections } from '../../utils/sections';
 
 const Menu = () => {
-  const navigate = useNavigate();
-
   // Ref to the menu and the hamburger icon to detect clicks outside of them
   const checkBurger = useRef<HTMLInputElement>(null);
   const menuRef = useRef<HTMLDivElement>(null);
@@ -88,11 +85,7 @@ const Menu = () => {
               </a>
             </li>
           ))}
-          <Cta
-            handleClick={() => navigate('/')}
-            classname='btn hero__cta'
-            content='Call to action'
-          />
+          <Cta />
         </ul>
       </nav>
       <label

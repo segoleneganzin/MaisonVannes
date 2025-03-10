@@ -20,12 +20,16 @@
 // Layouts / templates
 @use 'layouts/templates/pageLayout';
 @use 'layouts/templates/sectionLayout';
+// Layouts / sections
+@use 'layouts/sections/presentation';
+@use 'layouts/sections/opportunities';
+@use 'layouts/sections/location';
 
 // ****** 5. Components
-@use 'components/button';
 @use 'components/loader';
 @use 'components/scrollUp';
 @use 'components/cta';
+@use 'components/card';
 
 // ****** 6. Pages
 @use 'pages/home';

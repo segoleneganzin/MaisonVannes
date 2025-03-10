@@ -20,6 +20,10 @@ select {
 a {
   color: functions.color(link);
   @include mixins.on-event {
-    color: functions.color(tertiary);
+    color: functions.color(secondary);
   }
+}
+
+p {
+  text-align: justify;
 }

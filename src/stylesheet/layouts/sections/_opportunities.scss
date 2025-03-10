@@ -1,0 +1,24 @@
+@use '../../abstracts/mixins';
+
+.opportunities {
+  &__cards {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    .card {
+      @include mixins.media-breakpoint(max, tablet) {
+        box-shadow: none;
+      }
+    }
+    @include mixins.media-breakpoint(min, tablet) {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+      gap: 25px;
+
+      .card__description {
+        justify-self: start;
+        margin-top: 0;
+      }
+    }
+  }
+}

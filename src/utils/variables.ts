@@ -1,3 +1,3 @@
 export const variables = {
-  siteName: 'React Boilerplate',
+  siteName: 'Maison Vannes',
 };

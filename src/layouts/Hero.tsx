@@ -1,23 +1,24 @@
-import { useNavigate } from 'react-router-dom';
 import Cta from '../components/Cta';
 import HeroImage from '../assets/images/hero.jpg';
 
 const Hero = () => {
-  const navigate = useNavigate();
   return (
     <section className='hero'>
       <div className='hero__text'>
-        <h2 className='hero__title bold'>Hero Title</h2>
+        <h1 className='hero__title bold'>
+          Maison familiale avec piscine et grand jardin à vendre à Vannes -
+          Morbihan
+        </h1>
+        <h2 className='hero__subtitle bold'>
+          Propriété rare dans un quartier recherché à Vannes
+        </h2>
         <p className='hero__description'>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-          malesuada lorem maximus mauris scelerisque, at rutrum nulla dictum.
-          Donec ut dui sed ex dapibus porta.
+          Vous rêvez de vous installer à Vannes, à deux pas du Golfe du
+          Morbihan, tout en offrant à vos proches un accueil confortable et
+          indépendant ? Cette propriété unique sera votre havre de paix !
         </p>
-        <Cta
-          handleClick={() => navigate('/')}
-          classname='hero__cta'
-          content='Call to action'
-        />
+        <Cta />
+        <p className='hero__price bold'>743 600 € FAI</p>
       </div>
       <div className='hero__img-container'>
         <img src={HeroImage} alt='' className='hero__img' />

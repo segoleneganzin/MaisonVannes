@@ -1,8 +1,9 @@
 @use '../abstracts/functions';
 
 .cta {
-  border: 4px solid functions.color(tertiary);
-  color: functions.color(tertiary);
+  border: 4px solid functions.color(secondary);
+  border-radius: functions.radius(large);
+  color: functions.color(secondary);
   font-size: functions.fontSize(medium);
   letter-spacing: 2px;
   max-width: fit-content;
@@ -11,6 +12,7 @@
   text-transform: uppercase;
   transition: all 700ms ease;
   z-index: 1;
+  overflow: hidden;
   &__blobs {
     bottom: -3px;
     filter: url(#goo);
@@ -22,7 +24,7 @@
     top: -2px;
     z-index: -1;
     div {
-      background-color: functions.color(tertiary);
+      background-color: functions.color(secondary);
       width: 34%;
       height: 100%;
       border-radius: 100%;

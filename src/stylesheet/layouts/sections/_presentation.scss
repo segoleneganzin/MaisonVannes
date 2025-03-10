@@ -1,0 +1,32 @@
+@use '../../abstracts/functions';
+@use '../../abstracts/mixins';
+
+.presentation {
+  background-color: functions.color(primary);
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  &__cards {
+    display: grid;
+    gap: 15px;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    .card__description {
+      color: functions.color(secondary);
+      font-weight: 700;
+    }
+    @include mixins.media-breakpoint(min, laptop) {
+      grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+    }
+  }
+  &__images {
+    display: grid;
+    gap: 15px;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    @include mixins.media-breakpoint(min, large-mobile) {
+      grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    }
+  }
+  &__image {
+    max-width: 100%;
+  }
+}

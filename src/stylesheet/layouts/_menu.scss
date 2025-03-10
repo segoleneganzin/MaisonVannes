@@ -28,7 +28,7 @@
       }
     }
     span {
-      background-color: functions.color(primary);
+      background-color: functions.color(secondary);
       border-radius: functions.radius(medium);
       display: block;
       height: 3px;
@@ -101,7 +101,7 @@
     &__item-link {
       position: relative;
       &::after {
-        background-color: functions.color(tertiary);
+        background-color: functions.color(secondary);
         content: '';
         bottom: 0;
         height: 2px;

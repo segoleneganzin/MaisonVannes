@@ -1,6 +1,8 @@
 @use '../abstracts/mixins';
+@use '../abstracts/functions';
 
 .scroll-up {
+  fill: functions.color(secondary);
   right: 1vw;
   position: fixed;
   bottom: 5vh;

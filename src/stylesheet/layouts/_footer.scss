@@ -1,7 +1,38 @@
 @use '../abstracts/functions';
 
 .footer {
-  background-color: functions.color(primary);
-  min-height: 100px;
-  margin-top: 20px;
+  background-color: functions.color(secondary);
+  color: functions.color(background);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+
+  &__text {
+    font-size: functions.fontSize(medium);
+  }
+
+  &__credits {
+    font-size: functions.fontSize(small);
+    font-style: italic;
+    &-link {
+      color: functions.color(background);
+      &:hover {
+        color: functions.color(text);
+      }
+    }
+  }
+
+  .cta {
+    border: 4px solid functions.color(background);
+    color: functions.color(background);
+    &__blobs {
+      div {
+        background-color: functions.color(background);
+      }
+    }
+    &:hover {
+      color: functions.color(secondary);
+    }
+  }
 }

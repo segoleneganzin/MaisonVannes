@@ -1,0 +1,46 @@
+@use '../../abstracts/functions';
+@use '../../abstracts/mixins';
+
+.location {
+  background-color: functions.color(primary);
+  padding-bottom: 25px;
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+  }
+  &__map {
+    width: 100%;
+  }
+  &__infos {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  &__info {
+    display: flex;
+    gap: 15px;
+    &-icon {
+      width: 25px;
+    }
+    &--nearby {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+  }
+  @include mixins.media-breakpoint(min, tablet) {
+    &__info {
+      &--nearby {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+  }
+  @include mixins.media-breakpoint(min, laptop) {
+    &__content {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+}

@@ -2,38 +2,54 @@
 @use '../abstracts/mixins';
 
 .hero {
+  &__title {
+    font-size: functions.fontSize('x-large');
+    color: functions.color(black);
+  }
+  &__subtitle {
+    color: functions.color(secondary);
+  }
   &__text {
     display: flex;
     flex-direction: column;
     gap: 20px;
     justify-content: center;
-    text-align: center;
     padding: 10px 10px 20px;
-  }
-  &__title {
-    font-size: functions.fontSize('x-large');
   }
   &__cta {
     margin: auto;
   }
+  &__price {
+    font-size: functions.fontSize('large');
+  }
   &__img {
     height: auto;
     width: 100%;
+    &-container {
+      padding: 10px;
+    }
   }
 
   @include mixins.media-breakpoint(min, tablet) {
     display: grid;
-    grid-template-columns: 1fr 1.5fr;
+    grid-template-columns: 1fr 1fr;
+    padding-bottom: 15px;
     &__text {
-      align-self: center;
-      text-align: left;
-      padding: 10px 10px 0 25px;
-    }
-    &__cta {
-      margin: 0;
+      padding-left: 20px;
     }
     &__img {
-      border-radius: 0 0 0 20%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  @include mixins.media-breakpoint(min, laptop) {
+    grid-template-columns: 1fr 1.5fr;
+    gap: 20px;
+    &__text {
+      gap: 20px;
+      .cta {
+        margin: 10px 0;
+      }
     }
   }
 }
