@@ -1,4 +1,5 @@
 @use '../abstracts/functions';
+@use '../abstracts/mixins';
 
 .footer {
   background-color: functions.color(secondary);
@@ -33,6 +34,13 @@
     }
     &:hover {
       color: functions.color(secondary);
+    }
+  }
+
+  @include mixins.media-breakpoint(min, large-mobile) {
+    &__text,
+    &__credits {
+      text-align: center;
     }
   }
 }

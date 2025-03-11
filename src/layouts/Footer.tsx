@@ -9,12 +9,12 @@ const Footer = () => {
       </p>
       <Cta />
       <p className='footer__credits'>
-        © 2025 tous droits réservés, réalisé par
+        © 2025 tous droits réservés, réalisé par{' '}
         <a
           href='https://segoleneganzin.fr'
           rel='noreferrer'
           target='_blank'
-          className='footer__credits-link'
+          className='footer__credits-link bold'
         >
           Ségolène GANZIN
         </a>

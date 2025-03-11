@@ -1,4 +1,5 @@
 @use '../abstracts/functions';
+@use '../abstracts/mixins';
 
 .cta {
   border: 4px solid functions.color(secondary);
@@ -49,5 +50,10 @@
     .cta__blobs div {
       transform: scale(1.4) translateY(0) translateZ(0);
     }
+  }
+}
+@include mixins.media-breakpoint(min, small-mobile) {
+  .cta {
+    margin: auto;
   }
 }

@@ -29,7 +29,11 @@
       padding: 10px;
     }
   }
-
+  @include mixins.media-breakpoint(min, small-mobile) {
+    .cta {
+      margin: 0;
+    }
+  }
   @include mixins.media-breakpoint(min, tablet) {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -47,8 +51,10 @@
     gap: 20px;
     &__text {
       gap: 20px;
+      text-align: right;
       .cta {
         margin: 10px 0;
+        align-self: flex-end;
       }
     }
   }
