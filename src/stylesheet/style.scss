@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 // ****** 2. Vendors
-@use 'vendors/sg-form-lib';
+@use 'vendors/sg-library';
 
 // ****** 3. Base stuff
 @use 'base/buttons';
@@ -17,6 +17,7 @@
 @use 'layouts/header';
 @use 'layouts/hero';
 @use 'layouts/menu';
+@use 'layouts/contact';
 // Layouts / templates
 @use 'layouts/templates/pageLayout';
 @use 'layouts/templates/sectionLayout';

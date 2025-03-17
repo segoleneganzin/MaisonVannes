@@ -1,30 +1,49 @@
+type InputTag = 'select' | 'input' | 'textarea';
+type InputType =
+  | 'text'
+  | 'email'
+  | 'url'
+  | 'tel'
+  | 'checkbox'
+  | 'radio'
+  | 'submit';
+
 export const formFieldsContact = {
   recipientEmail: {
+    tag: 'input' as InputTag,
     label: 'Email',
-    type: 'email',
+    type: 'email' as InputType,
     hidden: true,
   },
   senderFirstname: {
+    tag: 'input' as InputTag,
     label: 'Prénom',
-    type: 'text',
+    type: 'text' as InputType,
     fieldErrorMessage: 'Veuillez renseigner votre prénom',
-    hidden: true,
   },
   senderLastname: {
+    tag: 'input' as InputTag,
     label: 'Nom',
-    type: 'text',
+    type: 'text' as InputType,
     fieldErrorMessage: 'Veuillez renseigner votre nom',
-    hidden: true,
+  },
+  senderTel: {
+    tag: 'input' as InputTag,
+    label: 'Téléphone',
+    type: 'number' as InputType,
+    fieldErrorMessage: 'Veuillez renseigner votre numéro de téléphone',
   },
   senderEmail: {
+    tag: 'input' as InputTag,
     label: 'Email',
-    type: 'email',
-    hidden: true,
+    type: 'email' as InputType,
+    pattern: /\S+@\S+\.\S+/,
+    fieldErrorMessage: 'Veuillez renseigner votre email',
   },
-  message: {
-    tag: 'textarea',
+  senderMessage: {
+    tag: 'textarea' as InputTag,
     label: 'Message',
-    type: 'text',
+    type: 'text' as InputType,
     fieldErrorMessage: 'Veuillez renseigner votre message',
   },
 };

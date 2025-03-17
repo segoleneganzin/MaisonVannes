@@ -21,3 +21,9 @@
 .no-scroll {
   overflow: hidden;
 }
+
+.hidden,
+.hidden label {
+  display: none;
+  position: absolute;
+}

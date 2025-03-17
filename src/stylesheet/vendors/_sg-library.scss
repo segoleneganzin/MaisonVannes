@@ -1,0 +1,40 @@
+@use '../abstracts/functions';
+@use '../abstracts/mixins';
+
+.sg-library {
+  &__modal {
+    &-children {
+      padding: 5px;
+    }
+  }
+  &__form {
+    &-content {
+      @include mixins.media-breakpoint(min, tablet) {
+        width: 500px;
+      }
+    }
+    &-label {
+      text-align: left;
+    }
+    &-btn {
+      background-color: #2c7548;
+      border-radius: functions.radius(small);
+      color: white;
+      cursor: pointer;
+      height: auto;
+      padding: 5px 15px;
+      width: fit-content;
+      font-size: 1rem;
+      margin-top: 10px;
+    }
+    &-field-container--error {
+      text-align: left;
+    }
+  }
+  &__input {
+    min-height: 40px;
+  }
+  &__textarea {
+    min-height: 150px;
+  }
+}

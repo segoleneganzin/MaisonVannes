@@ -10,14 +10,13 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@emailjs/browser": "^4.4.1",
     "@vitejs/plugin-basic-ssl": "^1.2.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-hook-form": "^7.54.2",
     "react-loading": "^2.0.3",
-    "react-router-dom": "^7.2.0",
-    "sg-form-lib": "^2.1.1",
-    "sg-library": "^0.0.1"
+    "sg-library": "^0.0.2"
   },
   "devDependencies": {
     "@eslint/js": "^9.21.0",

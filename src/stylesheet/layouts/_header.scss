@@ -9,7 +9,7 @@
   justify-content: space-between;
   padding: 0 10px;
   position: sticky;
-  z-index: 999;
+  z-index: 990;
   top: -5px;
   box-shadow: 0 -6px 10px 5px rgba(0, 0, 0, 0.5);
   @include mixins.media-breakpoint(min, tablet) {

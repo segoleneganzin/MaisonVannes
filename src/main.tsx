@@ -1,11 +1,12 @@
 import { createRoot } from 'react-dom/client';
-import { BrowserRouter } from 'react-router-dom';
-import Router from './Router';
-import 'sg-form-lib/style.css';
 import './stylesheet/style.scss';
+import { ContactModalProvider } from './contexts/contactModal/ContactModalProvider';
+import Home from './pages/Home';
+import Contact from './layouts/Contact';
 
 createRoot(document.getElementById('root')!).render(
-  <BrowserRouter>
-    <Router />
-  </BrowserRouter>
+  <ContactModalProvider>
+    <Home />
+    <Contact />
+  </ContactModalProvider>
 );
