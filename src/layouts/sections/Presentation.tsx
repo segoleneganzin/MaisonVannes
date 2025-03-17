@@ -31,11 +31,7 @@ const Presentation = () => {
         <Card icon={bedIcon} title='Chambres' description='7' />
         <Card icon={garageIcon} title='Garage' description='2' />
         <Card icon={treeIcon} title='Terrain' description='1080m2' />
-        <Card
-          icon={houseIcon}
-          title='Superficie habitable'
-          description='201m2'
-        />
+        <Card icon={houseIcon} title='Surface habitable' description='201m2' />
         <Card icon={dpeIcon} title='DPE' description='C' />
       </div>
       <div className='presentation__images'>
