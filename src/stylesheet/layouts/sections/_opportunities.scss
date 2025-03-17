@@ -6,6 +6,9 @@
     flex-direction: column;
     gap: 15px;
     .card {
+      &__icon {
+        height: auto;
+      }
       @include mixins.media-breakpoint(max, tablet) {
         box-shadow: none;
       }
