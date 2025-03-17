@@ -21,7 +21,13 @@ const Hero = () => {
         <p className='hero__price bold'>743 600 € FAI</p>
       </div>
       <div className='hero__img-container'>
-        <img src={HeroImage} alt='' className='hero__img' />
+        <img
+          src={HeroImage}
+          alt='Maison avec piscine et jardin à vendre à Vannes'
+          className='hero__img'
+          width={'832'}
+          height={'624'}
+        />
       </div>
     </section>
   );

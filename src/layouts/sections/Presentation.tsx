@@ -40,9 +40,33 @@ const Presentation = () => {
       </div>
       <div className='presentation__images'>
         {/* TODO carousel ?? */}
-        <img src={img2} alt='' className='presentation__image' />
-        <img src={img3} alt='' className='presentation__image' />
-        <img src={img4} alt='' className='presentation__image' />
+
+        <img
+          src={img2}
+          alt='Terasse avec piscine'
+          className='presentation__image'
+          loading='lazy'
+          width={'568'}
+          height={'426'}
+        />
+
+        <img
+          src={img3}
+          alt='Terasse de la maison secondaire'
+          className='presentation__image'
+          loading='lazy'
+          width={'568'}
+          height={'426'}
+        />
+
+        <img
+          src={img4}
+          alt='Jardin arboré'
+          className='presentation__image'
+          loading='lazy'
+          width={'568'}
+          height={'426'}
+        />
       </div>
       <Cta />
     </SectionLayout>
