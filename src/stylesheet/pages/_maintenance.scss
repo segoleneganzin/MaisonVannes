@@ -1,0 +1,9 @@
+@use '../abstracts/functions';
+
+.maintenance__text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  font-size: functions.fontSize(x-large);
+}
