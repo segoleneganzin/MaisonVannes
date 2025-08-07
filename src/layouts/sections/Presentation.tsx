@@ -5,13 +5,10 @@ import garageIcon from '../../assets/icons/car.svg';
 import treeIcon from '../../assets/icons/tree.svg';
 import houseIcon from '../../assets/icons/house.svg';
 import dpeIcon from '../../assets/icons/dpe.svg';
-// import img2 from '../../assets/images/img2.webp';
-// import img3 from '../../assets/images/img3.webp';
-// import img4 from '../../assets/images/img4.webp';
-import img2 from '../../assets/images/maison1.jpg';
-import img3 from '../../assets/images/maison2.jpg';
-import img4 from '../../assets/images/maison3.jpg';
-import img5 from '../../assets/images/img4.webp';
+import maison1 from '../../assets/images/maison1.webp';
+import maison2 from '../../assets/images/maison2.webp';
+import maison3 from '../../assets/images/maison3.webp';
+import maison4 from '../../assets/images/maison4.webp';
 import Cta from '../../components/Cta';
 
 const Presentation = () => {
@@ -42,7 +39,7 @@ const Presentation = () => {
         {/* TODO carousel ?? */}
 
         <img
-          src={img2}
+          src={maison1}
           alt='salon chaleureux'
           className='presentation__image'
           loading='lazy'
@@ -51,7 +48,7 @@ const Presentation = () => {
         />
 
         <img
-          src={img3}
+          src={maison2}
           alt='grande cuisine ouverte'
           className='presentation__image'
           loading='lazy'
@@ -60,7 +57,7 @@ const Presentation = () => {
         />
 
         <img
-          src={img4}
+          src={maison3}
           alt='chambre spacieuse'
           className='presentation__image'
           loading='lazy'
@@ -68,7 +65,7 @@ const Presentation = () => {
           height={'426'}
         />
         <img
-          src={img5}
+          src={maison4}
           alt='Jardin arboré'
           className='presentation__image'
           loading='lazy'
