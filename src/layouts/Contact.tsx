@@ -11,10 +11,6 @@ const Contact = () => {
   const [errorMessage, setErrorMessage] = useState('');
   const [btnText, setBtnText] = useState('Annuler');
 
-  const formValues = {
-    recipientEmail: 'ericganzin@gmail.com',
-  };
-
   const sendEmail = () => {
     setIsLoading(true);
     emailjs
@@ -96,7 +92,6 @@ const Contact = () => {
                 'senderEmail',
                 'senderMessage',
               ]}
-              fieldValue={formValues}
               customTheme={modalCustomTheme}
             />
           )}
