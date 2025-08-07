@@ -1,5 +1,5 @@
 import Cta from '../components/Cta';
-import HeroImage from '../assets/images/hero2.jpg';
+import HeroImage from '../assets/images/hero.jpg';
 
 const Hero = () => {
   return (
