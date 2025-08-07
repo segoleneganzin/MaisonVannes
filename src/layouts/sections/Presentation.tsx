@@ -5,9 +5,13 @@ import garageIcon from '../../assets/icons/car.svg';
 import treeIcon from '../../assets/icons/tree.svg';
 import houseIcon from '../../assets/icons/house.svg';
 import dpeIcon from '../../assets/icons/dpe.svg';
-import img2 from '../../assets/images/img2.webp';
-import img3 from '../../assets/images/img3.webp';
-import img4 from '../../assets/images/img4.webp';
+// import img2 from '../../assets/images/img2.webp';
+// import img3 from '../../assets/images/img3.webp';
+// import img4 from '../../assets/images/img4.webp';
+import img2 from '../../assets/images/maison1.jpg';
+import img3 from '../../assets/images/maison2.jpg';
+import img4 from '../../assets/images/maison3.jpg';
+import img5 from '../../assets/images/img4.webp';
 import Cta from '../../components/Cta';
 
 const Presentation = () => {
@@ -39,7 +43,7 @@ const Presentation = () => {
 
         <img
           src={img2}
-          alt='Terasse avec piscine'
+          alt='salon chaleureux'
           className='presentation__image'
           loading='lazy'
           width={'568'}
@@ -48,7 +52,7 @@ const Presentation = () => {
 
         <img
           src={img3}
-          alt='Terasse de la maison secondaire'
+          alt='grande cuisine ouverte'
           className='presentation__image'
           loading='lazy'
           width={'568'}
@@ -57,6 +61,14 @@ const Presentation = () => {
 
         <img
           src={img4}
+          alt='chambre spacieuse'
+          className='presentation__image'
+          loading='lazy'
+          width={'568'}
+          height={'426'}
+        />
+        <img
+          src={img5}
           alt='Jardin arboré'
           className='presentation__image'
           loading='lazy'

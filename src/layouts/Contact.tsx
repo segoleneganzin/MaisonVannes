@@ -75,6 +75,10 @@ const Contact = () => {
         </div>
       ) : (
         <div className='contact'>
+          {/* deactivation overlay */}
+          <div className='contact__deactivation-overlay'>
+            Formulaire désactivé
+          </div>
           {isLoading ? (
             <p>Envoi en cours...</p>
           ) : (

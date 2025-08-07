@@ -1,5 +1,5 @@
 import Cta from '../components/Cta';
-import HeroImage from '../assets/images/hero.webp';
+import HeroImage from '../assets/images/hero2.jpg';
 
 const Hero = () => {
   return (
@@ -18,7 +18,7 @@ const Hero = () => {
           indépendant ? Cette propriété unique sera votre havre de paix !
         </p>
         <Cta />
-        <p className='hero__price bold'>743 600 € FAI</p>
+        <p className='hero__price bold'>VENDU</p>
       </div>
       <div className='hero__img-container'>
         <img
